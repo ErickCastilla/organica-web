@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header class="ancho contenedor-header-padre">
+        <div class="contenedor-header1">
+            <figure class="contenedor-logo">
+                <img src="img/logo_arriba.png" alt="">
+            </figure>
+            <div class="contenedor-menu-phone" id="btn-menu">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="contenedor-header2" id="menu-principal">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nuestros Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner-principal">
+        <img src="img/foto_slide.jpg" alt="">
+        <div class="ancho contenedor-texto-banner">
+            <h1>Cultivamos verduras orgánicas <br> y las traemos a las traemos <br> a tu mesa</h1>
+        </div>
+    </section>
+
+    <section class="servicios ancho centrar margen">
+        <h2>Nuestros Servicios</h2>
+        <p class="subtitulo">Lo que ofrecemos</p>
+
+        <div class="contenedor-tarjetas">
+            <div class="tarjeta">
+                <img src="img/icono1.png" alt="">
+                <h3>Ganado Vacuno</h3>
+                <p>Carne de res producida sin ingeniería genética, uso de radiación ionizante o lodos de depuradora.</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/icono2.png" alt="">
+                <h3>Productos Lácteos</h3>
+                <p>Los productos lácteos como la leche, el queso y el yogur contienen los nutrientes que su cuerpo
+                    necesita.</p>
+            </div>
+
+            <div class="tarjeta">
+                <img src="img/icono3.png" alt="">
+                <h3>Frutas de la Huerta</h3>
+                <p>Cubre todo lo que necesita saber para cultivar y comercializar con éxito sus propias frutas orgánicas
+                    de huerta.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-principal centrar">
+        <img src="img/logo_abajo.png" alt="">
+    </footer>
+
+    <script>
+        $("#btn-menu").click(function () {
+            $("#menu-principal").slideToggle();
+        });
+    </script>
+
+
+
+</body>
+
+</html>
